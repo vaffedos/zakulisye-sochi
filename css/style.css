@@ -168,7 +168,7 @@ h1,h2,h3{ font-family:var(--font-head); font-weight:600; line-height:1.15; color
 .menu-row{ padding:22px 0; border-bottom:1px solid rgba(29,22,19,.16); }
 .menu-row:first-child{ padding-top:0; }
 .menu-row-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:8px; }
-.menu-row-head h3{ font-size:1.12rem; font-weight:600; white-space:nowrap; }
+.menu-row-head h3{ font-size:1.12rem; font-weight:600; white-space:nowrap; color:#1D1613; }
 .mi-dots{
   flex:1; border-bottom:1.5px dotted rgba(29,22,19,.35); transform:translateY(-4px);
 }
