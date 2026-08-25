@@ -157,7 +157,20 @@ h1,h2,h3{ font-family:var(--font-head); font-weight:600; line-height:1.15; color
 .menu-section .eyebrow{ color:var(--wine); }
 .menu-section .section-head h2{ color:#1D1613; }
 .menu-section .section-sub{ color:#6B5C4C; }
-.menu-layout{ display:grid; grid-template-columns:.85fr 1.15fr; gap:60px; align-items:start; }
+/* Tabs */
+.menu-tabs{ display:flex; flex-wrap:wrap; gap:6px 4px; justify-content:center; margin-bottom:48px; border-bottom:1px solid rgba(29,22,19,.16); }
+.menu-tab{
+  font-family:var(--font-label); font-weight:600; font-size:.85rem; letter-spacing:.01em;
+  background:none; border:none; cursor:pointer; color:#8A7A67;
+  padding:10px 16px 14px; border-bottom:2px solid transparent; transition:color .2s, border-color .2s;
+}
+.menu-tab:hover{ color:var(--wine); }
+.menu-tab.active{ color:var(--wine); border-bottom-color:var(--wine); }
+
+.menu-panel{ display:none; }
+.menu-panel.active{ display:block; }
+.menu-panel[data-panel="cocktails"].active{ display:grid; grid-template-columns:.85fr 1.15fr; gap:60px; align-items:start; }
+
 .menu-media{ position:relative; }
 .menu-media img{ border-radius:2px; }
 .menu-media > img:first-child{ width:100%; aspect-ratio:4/5; object-fit:cover; }
@@ -175,6 +188,27 @@ h1,h2,h3{ font-family:var(--font-head); font-weight:600; line-height:1.15; color
 .price{ font-family:var(--font-head); font-weight:700; color:var(--wine); white-space:nowrap; }
 .menu-row p{ color:#6B5C4C; font-size:.92rem; max-width:60ch; }
 .menu-note{ margin-top:24px; font-size:.85rem; color:#8A7A67; font-style:italic; }
+.menu-panel-note{ font-size:.85rem; color:#8A7A67; font-style:italic; margin-bottom:28px; }
+
+/* Cocktail rows (авторские + ремиксы) */
+.menu-list-full{ max-width:840px; margin:0 auto; }
+.cocktail-row{ padding:20px 0; border-bottom:1px solid rgba(29,22,19,.16); }
+.cocktail-row:first-child{ padding-top:0; }
+.cocktail-tagline{ font-family:var(--font-head); font-style:italic; color:var(--wine); font-size:.94rem; margin-bottom:4px; }
+.cocktail-ing{ color:#6B5C4C; font-size:.86rem; }
+
+/* Spirit groups (настойки / крепкий / бар / soft) */
+.spirit-group{ margin-bottom:34px; }
+.spirit-group:last-child{ margin-bottom:0; }
+.spirit-group-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:10px; border-bottom:1px solid rgba(29,22,19,.22); padding-bottom:6px; }
+.spirit-group-head h4{ font-family:var(--font-head); font-size:1.02rem; font-weight:600; color:#1D1613; }
+.spirit-group-head .volume{ font-size:.76rem; color:#8A7A67; white-space:nowrap; }
+.spirit-list li{ display:flex; align-items:baseline; gap:8px; padding:6px 0; font-size:.92rem; color:#332A22; }
+.spirit-list li span:first-child{ white-space:nowrap; }
+.spirit-list li .mi-dots{ flex:1; }
+.spirit-list li .price{ font-family:var(--font-body); font-weight:600; font-size:.88rem; }
+.spirit-list-2col{ column-count:2; column-gap:32px; }
+.spirit-list-2col li{ display:list-item; list-style:none; break-inside:avoid; }
 
 /* ---------- Food strip ---------- */
 .food{ padding:100px 0; background:var(--bg); }
@@ -292,9 +326,10 @@ h1,h2,h3{ font-family:var(--font-head); font-weight:600; line-height:1.15; color
   .burger{ display:flex; }
   .mobile-nav{ display:flex; }
 
-  .hero-grid, .about-grid, .menu-layout, .program-grid, .reserve-grid, .contacts-grid, .food-layout{
+  .hero-grid, .about-grid, .program-grid, .reserve-grid, .contacts-grid, .food-layout{
     grid-template-columns:1fr;
   }
+  .menu-panel[data-panel="cocktails"].active{ grid-template-columns:1fr; }
   .hero-media{ order:-1; }
   .hero-media::before{ display:none; }
   .about-media{ order:-1; }
@@ -302,6 +337,9 @@ h1,h2,h3{ font-family:var(--font-head); font-weight:600; line-height:1.15; color
   .menu-media{ order:-1; margin-bottom:20px; }
   .menu-media-small{ right:0; }
   .food-media{ order:-1; margin-bottom:8px; }
+  .menu-tabs{ justify-content:flex-start; overflow-x:auto; flex-wrap:nowrap; -webkit-overflow-scrolling:touch; }
+  .menu-tab{ white-space:nowrap; }
+  .spirit-list-2col{ column-count:1; }
 
   .vibe-grid{ grid-template-columns:1fr; grid-template-areas:"tall" "a" "b"; gap:16px; margin-bottom:16px; }
   .vibe-item-tall img, .vibe-item:not(.vibe-item-tall) img{ aspect-ratio:4/3; }

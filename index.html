@@ -110,7 +110,7 @@
         <span class="stat-label">подписчиков в Instagram</span>
       </div>
       <div class="stat reveal">
-        <span class="stat-num" data-count="38">0</span>
+        <span class="stat-num" data-count="78">0</span>
         <span class="stat-label">позиций в баре</span>
       </div>
     </div>
@@ -131,7 +131,8 @@
           потёртые ковры и&nbsp;пианино в&nbsp;углу.</p>
         <p>Название бар оправдывает буквально: здесь всё устроено как закулисье маленького театра —
           камерно, тепло и&nbsp;немного по-театральному. Бармены Игорь и&nbsp;Ваня варят собственный вермут,
-          настаивают наливки и&nbsp;собирают коктейльную карту как программку спектакля — из&nbsp;трёх актов.</p>
+          настаивают наливки и&nbsp;собирают коктейли под музыкальные названия — от&nbsp;«Bohemian Rhapsody»
+          до&nbsp;«Billie Jean».</p>
         <ul class="feature-list">
           <li>Крафтовые коктейли и&nbsp;авторские настойки</li>
           <li>Живая музыка и&nbsp;стендап на&nbsp;маленькой сцене</li>
@@ -147,44 +148,287 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">Меню</p>
-        <h2>Три акта коктейльной карты</h2>
-        <p class="section-sub">В баре 38 позиций — от&nbsp;авторских коктейлей до&nbsp;настоек и&nbsp;закусок.
-          Показываем то, что пробовали и&nbsp;о&nbsp;чём можем сказать честно; полную карту приносят
-          на&nbsp;столик или показывают по&nbsp;QR-коду.</p>
+        <h2>Барная карта — акт за актом</h2>
+        <p class="section-sub">Семь авторских коктейлей под музыкальные названия, семь ремиксов
+          классики, домашние настойки и&nbsp;полный крепкий бар. Приводим карту целиком —
+          как её печатают на&nbsp;столике.</p>
       </div>
 
-      <div class="menu-layout">
-        <div class="menu-media reveal">
-          <img src="assets/img/cocktails-row.jpg" alt="Три авторских коктейля на барной стойке Закулисья" loading="lazy">
-          <img src="assets/img/cocktail-red.jpg" alt="Коктейль с цедрой апельсина на баре Закулисья" loading="lazy" class="menu-media-small">
+      <div class="menu-tabs reveal" id="menuTabs">
+        <button class="menu-tab active" data-tab="cocktails">Коктейли</button>
+        <button class="menu-tab" data-tab="remixes">Ремиксы</button>
+        <button class="menu-tab" data-tab="infusions">Настойки и крепкое</button>
+        <button class="menu-tab" data-tab="bar">Бар и вино</button>
+        <button class="menu-tab" data-tab="soft">Безалкогольное</button>
+        <button class="menu-tab" data-tab="kitchen">Кухня</button>
+      </div>
+
+      <div class="menu-panels reveal">
+
+        <!-- COCKTAILS -->
+        <div class="menu-panel active" data-panel="cocktails">
+          <div class="menu-media">
+            <img src="assets/img/cocktails-row.jpg" alt="Три авторских коктейля на барной стойке Закулисья" loading="lazy">
+            <img src="assets/img/cocktail-red.jpg" alt="Коктейль с цедрой апельсина на баре Закулисья" loading="lazy" class="menu-media-small">
+          </div>
+          <div class="menu-list">
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«Bohemian Rhapsody»</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">Бэкстейдж всегда ей был</p>
+              <p class="cocktail-ing">Джин · фернет бранка · грейпфрут · малина · гранат</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«Dancing Queen»</h3><span class="mi-dots"></span><span class="price">650 ₽</span></div>
+              <p class="cocktail-tagline">Каждый хоть раз мечтал ей стать</p>
+              <p class="cocktail-ing">Джин · лопух · одуванчик · вино · дыня · кордиал яблоко-манго</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«Voodoo Child»</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">Мы все эмигранты со своей историей</p>
+              <p class="cocktail-ing">Бурбон · кордиал ройбуш-абрикос · херес фино · апертиво</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«Let It Be»</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">Не теряй надежду на лучшее</p>
+              <p class="cocktail-ing">Текила · алоэ · клубника · ревень · лайм · фейхоа · грейпфрут</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«I Can't Get No»</h3><span class="mi-dots"></span><span class="price">750 ₽</span></div>
+              <p class="cocktail-tagline">Сбрось градус напряжения</p>
+              <p class="cocktail-ing">Грушовица · ликёр ментол-бузина · лайм · огурец · игристое</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«Billie Jean»</h3><span class="mi-dots"></span><span class="price">750 ₽</span></div>
+              <p class="cocktail-tagline">Ох уж эти фанатки</p>
+              <p class="cocktail-ing">Ром · ананас · соджу персик · личи · мята · бабл-гам · клюква · лайм</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>«Makes You Fly»</h3><span class="mi-dots"></span><span class="price">650 ₽</span></div>
+              <p class="cocktail-tagline">Всё было не зря</p>
+              <p class="cocktail-ing">Джин · писко · базилик · киви · рислинг · лимон</p>
+            </div>
+          </div>
         </div>
 
-        <div class="menu-list reveal">
-          <div class="menu-row">
-            <div class="menu-row-head"><h3>Авторские коктейли</h3><span class="mi-dots"></span><span class="price">от 650 ₽</span></div>
-            <p>Три акта авторских сочетаний вкусов, текстур и&nbsp;цвета — коктейльная карта, которую
-              бармены меняют по&nbsp;сезону.</p>
+        <!-- REMIXES -->
+        <div class="menu-panel" data-panel="remixes">
+          <div class="menu-list menu-list-full">
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Негрони</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">На сладком вермуте из красного</p>
+              <p class="cocktail-ing">Джин · домашний каталонский вермут · кампари</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Авиация</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">С ярким смородиновым акцентом</p>
+              <p class="cocktail-ing">Джин · смородина · марасхино · фиалка · лимон · саган-дайля</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Панк Мартини</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">Подаётся с тартаром из сельди</p>
+              <p class="cocktail-ing">Водка · яблоко · хинин · тимьян · кардамон · домашний сухой вермут</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Блади Мери</h3><span class="mi-dots"></span><span class="price">900 ₽</span></div>
+              <p class="cocktail-tagline">Дополнена домашними соленьями</p>
+              <p class="cocktail-ing">7 овощей · умами-микс · томатный сок · лимон · соленья</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Амаретто Сауэр</h3><span class="mi-dots"></span><span class="price">750 ₽</span></div>
+              <p class="cocktail-tagline">Смесь двух культовых коктейлей</p>
+              <p class="cocktail-ing">Бурбон · амаретто · маракуйя · лимон · ваниль</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Манговый Президенте</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">Хорошего понемногу</p>
+              <p class="cocktail-ing">Пряный ром · манговый вермут · драй оранж · гренадин · ангостура</p>
+            </div>
+            <div class="cocktail-row">
+              <div class="menu-row-head"><h3>Южный Дух</h3><span class="mi-dots"></span><span class="price">700 ₽</span></div>
+              <p class="cocktail-tagline">Для фанатов «Большого Лебовски»</p>
+              <p class="cocktail-ing">Ром · карамель · масковадо · квас · сливки</p>
+            </div>
           </div>
-          <div class="menu-row">
-            <div class="menu-row-head"><h3>Настойки</h3><span class="mi-dots"></span><span class="price">250 ₽</span></div>
-            <p>Ратафия, лимончелло, крем де&nbsp;банана, клубника-базилик, мэри-шот, клюква-маракуйя —
-              на&nbsp;премиальном спирте с&nbsp;ягодами, травами и&nbsp;специями.</p>
-          </div>
-          <div class="menu-row">
-            <div class="menu-row-head"><h3>Безалкогольные Drinksome</h3><span class="mi-dots"></span><span class="price">600 ₽</span></div>
-            <p>Джин-тоник, биттер-тоник, виски-сауэр — российский бренд напитков без алкоголя, имитирующих
-              вкус и&nbsp;аромат классики.</p>
-          </div>
-          <div class="menu-row">
-            <div class="menu-row-head"><h3>Тёплый салат с говяжьей вырезкой</h3><span class="mi-dots"></span><span class="price">740 ₽</span></div>
-            <p>Нежная говядина, сыр фета, черри, руккола и&nbsp;хрустящие орехи · 200&nbsp;г.</p>
-          </div>
-          <div class="menu-row">
-            <div class="menu-row-head"><h3>«Диета балерины»</h3><span class="mi-dots"></span><span class="price">430 ₽</span></div>
-            <p>Оливки, сулугуни, маринованные черри и&nbsp;хрустящие огурчики — лёгкая закуска к&nbsp;вину или коктейлю · 120&nbsp;г.</p>
-          </div>
-          <p class="menu-note">Показаны 5 из 38 позиций бара — полную карту приносят вместе с меню на&nbsp;столик.</p>
         </div>
+
+        <!-- INFUSIONS & STRONG -->
+        <div class="menu-panel" data-panel="infusions">
+          <div class="menu-list menu-list-full">
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Настойки</h4><span class="volume">1×50 мл — 350 ₽ · 3×50 мл — 900 ₽</span></div>
+              <ul class="spirit-list spirit-list-2col">
+                <li>Лимончелло</li><li>Ратафия</li>
+                <li>Хлеб да соль</li><li>Мэри-шот</li>
+                <li>Крем де банана</li><li>Клюква-маракуйя</li>
+                <li>Клубника-базилик</li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Текила + сангрита</h4><span class="volume">100 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Кампо Азул Класико</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Орендайн Репосадо</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Аперитивы и ликёры</h4><span class="volume">50 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Аперитиво Эллевен</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Биттер Негрони</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Амаро Монтенегро</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+                <li><span>Фернет</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Егермайстер</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Ликёры «в ас-те»</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Водка</h4><span class="volume">50 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>7 злаков</span><span class="mi-dots"></span><span class="price">450 ₽</span></li>
+                <li><span>7 овощей</span><span class="mi-dots"></span><span class="price">450 ₽</span></li>
+                <li><span>Целовальник</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Джин</h4><span class="volume">50 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Беркшир Лопух & Одуванчик</span><span class="mi-dots"></span><span class="price">500 ₽</span></li>
+                <li><span>Беркшир Малина & Ревень</span><span class="mi-dots"></span><span class="price">500 ₽</span></li>
+                <li><span>Беркшир Мёд & Оранж Блоссом</span><span class="mi-dots"></span><span class="price">500 ₽</span></li>
+                <li><span>Каприоль Лимон & Бергамот</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+                <li><span>Барристер Бартендерс</span><span class="mi-dots"></span><span class="price">450 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Ром</h4><span class="volume">50 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Такамака Спайсд</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Данса Дель Фуэго</span><span class="mi-dots"></span><span class="price">550 ₽</span></li>
+                <li><span>Кашаса 51</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Виски</h4><span class="volume">50 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Поугс Стримс оф Виски</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Джим Бим</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Хинч Айриш Виски</span><span class="mi-dots"></span><span class="price">700 ₽</span></li>
+                <li><span>Лайтхаус Питер</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Крэби Сингл Молт</span><span class="mi-dots"></span><span class="price">700 ₽</span></li>
+                <li><span>Абер Фолс Сингл Молт</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Коньяк</h4><span class="volume">50 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Рулле ВС</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+                <li><span>Бодуен</span><span class="mi-dots"></span><span class="price">650 ₽</span></li>
+                <li><span>Бодуен Карамель</span><span class="mi-dots"></span><span class="price">550 ₽</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BAR / EASY DRINKS / WINE -->
+        <div class="menu-panel" data-panel="bar">
+          <div class="menu-list menu-list-full">
+            <p class="menu-panel-note">Easy Drinks — простые миксы, которые бармен собирает под ваш вкус · 200 мл</p>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Виски</h4></div>
+              <ul class="spirit-list">
+                <li><span>Джим Бим & Сода</span><span class="mi-dots"></span><span class="price">650 ₽</span></li>
+                <li><span>Крэби Сингл Молт & Сода</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+                <li><span>Абер Фолс Сингл Молт & Сода</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Джин</h4></div>
+              <ul class="spirit-list">
+                <li><span>Каприоль & Тоник</span><span class="mi-dots"></span><span class="price">750 ₽</span></li>
+                <li><span>Барристер Бартендерс & Сода</span><span class="mi-dots"></span><span class="price">550 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Ром</h4></div>
+              <ul class="spirit-list">
+                <li><span>Такамака Спайсд & Сода</span><span class="mi-dots"></span><span class="price">650 ₽</span></li>
+                <li><span>Данса Дель Фуэго & Сода</span><span class="mi-dots"></span><span class="price">650 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Аперитивы</h4></div>
+              <ul class="spirit-list">
+                <li><span>Биттер & Тоник</span><span class="mi-dots"></span><span class="price">650 ₽</span></li>
+                <li><span>Атха вермут манго & Тоник</span><span class="mi-dots"></span><span class="price">650 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Водка & сода</h4></div>
+              <ul class="spirit-list">
+                <li><span>«Мне этот мир абсолютно понятен»</span><span class="mi-dots"></span><span class="price">500 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Пиво | Сидр</h4><span class="volume">500 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Лагер</span><span class="mi-dots"></span><span class="price">390 ₽</span></li>
+                <li><span>Баден Бир Вайс</span><span class="mi-dots"></span><span class="price">400 ₽</span></li>
+                <li><span>Крушовице безалкогольное</span><span class="mi-dots"></span><span class="price">390 ₽</span></li>
+                <li><span>Крушовице тёмное</span><span class="mi-dots"></span><span class="price">450 ₽</span></li>
+                <li><span>Сидр Сан Сочи</span><span class="mi-dots"></span><span class="price">450 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Вино</h4><span class="volume">150 мл</span></div>
+              <ul class="spirit-list">
+                <li><span>Аристов Анима миллезимато</span><span class="mi-dots"></span><span class="price">550 ₽</span></li>
+                <li><span>Рислинг Высокий берег</span><span class="mi-dots"></span><span class="price">550 ₽</span></li>
+                <li><span>Мысхако Мерло</span><span class="mi-dots"></span><span class="price">550 ₽</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOFT DRINKS -->
+        <div class="menu-panel" data-panel="soft">
+          <div class="menu-list menu-list-full">
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Drinksome — безалкогольная классика</h4></div>
+              <ul class="spirit-list">
+                <li><span>Джин-тоник</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Биттер-тоник</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Виски сауэр</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Бэкстейдж</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+                <li><span>Южный дух</span><span class="mi-dots"></span><span class="price">600 ₽</span></li>
+              </ul>
+            </div>
+            <div class="spirit-group">
+              <div class="spirit-group-head"><h4>Прочее</h4></div>
+              <ul class="spirit-list">
+                <li><span>Лимонад «в ас-те»</span><span class="mi-dots"></span><span class="price">500 ₽</span></li>
+                <li><span>Содовая месяца</span><span class="mi-dots"></span><span class="price">350 ₽</span></li>
+                <li><span>Сок «в ас-те»</span><span class="mi-dots"></span><span class="price">300 ₽</span></li>
+                <li><span>Чай «в ас-те»</span><span class="mi-dots"></span><span class="price">800 ₽</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- KITCHEN -->
+        <div class="menu-panel" data-panel="kitchen">
+          <div class="menu-list menu-list-full">
+            <div class="menu-row">
+              <div class="menu-row-head"><h3>Тёплый салат с говяжьей вырезкой</h3><span class="mi-dots"></span><span class="price">740 ₽</span></div>
+              <p>Нежная говядина, сыр фета, черри, руккола и&nbsp;хрустящие орехи · 200&nbsp;г.</p>
+            </div>
+            <div class="menu-row">
+              <div class="menu-row-head"><h3>«Диета балерины»</h3><span class="mi-dots"></span><span class="price">430 ₽</span></div>
+              <p>Оливки, сулугуни, маринованные черри и&nbsp;хрустящие огурчики — лёгкая закуска к&nbsp;вину или коктейлю · 120&nbsp;г.</p>
+            </div>
+            <p class="menu-note">Кухня небольшая — уточняйте актуальные горячие позиции у&nbsp;бармена.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

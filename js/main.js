@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- Табы меню ---------- */
+  const menuTabs = document.querySelectorAll('.menu-tab');
+  const menuPanels = document.querySelectorAll('.menu-panel');
+  menuTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.tab;
+      menuTabs.forEach(t => t.classList.toggle('active', t === tab));
+      menuPanels.forEach(p => p.classList.toggle('active', p.dataset.panel === target));
+    });
+  });
+
   /* ---------- Scroll reveal ---------- */
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
